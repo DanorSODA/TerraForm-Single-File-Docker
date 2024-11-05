@@ -30,6 +30,8 @@ The following software will be installed automatically if not found:
 ├── install.md               # Detailed installation steps and usage
 ├── tasks.md                 # Task list and project requirements
 └── contributors.md          # List of contributors to the project
+```
+
 
 - [Installation guide](INSTALL.md)
 - [Contributing](CONTRIBUTIONS.md)
