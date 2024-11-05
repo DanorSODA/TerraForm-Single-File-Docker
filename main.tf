@@ -17,7 +17,7 @@ resource "docker_network" "nginx_network" {
   name = "nginx_network"  # Name of the Docker bridge network
 }
 
-# Define the application container that will respond with "hello world".
+# Define the application container
 resource "docker_container" "app" {
   name  = "details_app"  # Name of the container
   image = "danors/details-app:latest"  # Docker image to use for the app

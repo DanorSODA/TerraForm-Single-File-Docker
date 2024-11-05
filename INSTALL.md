@@ -33,7 +33,7 @@ This script performs the following:
 
 ### Step 2: Deploy the Environment with Terraform:
 
-Once the setup completes, you can use Terraform to deploy the Docker environment. 
+Once the setup completes, you can use Terraform to deploy the Docker environment.
 This command will set up the NGINX and app containers, establish a Docker network, and apply SSL settings.
 
 ```bash
@@ -45,11 +45,12 @@ terraform apply
 After the deployment completes, Terraform will output the IP address of the NGINX container.
 
 ## Uninstallation
+
 To remove the Docker containers and network, run:
 
 ```bash
 terraform destroy
 ```
 
-Confirm the action by typing yes. 
+Confirm the action by typing yes.
 This will stop and remove the containers, network, and any associated resources created by Terraform.
