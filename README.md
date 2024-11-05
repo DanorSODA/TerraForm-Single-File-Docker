@@ -12,9 +12,9 @@ This project sets up a multi-container Docker environment using Terraform, with 
 
 ### Software Requirements
 The following software will be installed automatically if not found:
-    - Docker: Container runtime to run NGINX and app containers.
-    - Docker Compose: (Optional) For managing containers locally using Docker Compose.
-    - Terraform: Infrastructure-as-Code tool to provision the Docker environment.
+- Docker: Container runtime to run NGINX and app containers.
+- Docker Compose: (Optional) For managing containers locally using Docker Compose.
+- Terraform: Infrastructure-as-Code tool to provision the Docker environment.
 
 ## File Structure
 
