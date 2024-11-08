@@ -18,7 +18,7 @@ The following software will be installed automatically if not found:
 
 ## File Structure
 
-```plaintext
+
 ├── [main.tf](main.tf)                  # Terraform configuration file for multi-container setup
 ├── [install.sh](install.sh)               # Script for setting up dependencies and initializing the environment
 ├── [docker-compose.yaml](docker-compose.yaml)      # Docker Compose file for local multi-container environment
@@ -29,8 +29,6 @@ The following software will be installed automatically if not found:
 ├── [install.md](install.md)               # Detailed installation steps and usage
 ├── [tasks.md](tasks.md)                 # Task list and project requirements
 └── [contributors.md](contributors.md)          # List of contributors to the project
-
-```
 
 
 - [Installation guide](INSTALL.md)
