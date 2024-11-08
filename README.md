@@ -19,16 +19,17 @@ The following software will be installed automatically if not found:
 ## File Structure
 
 ```plaintext
-├── main.tf                  # Terraform configuration file for multi-container setup
-├── install.sh               # Script for setting up dependencies and initializing the environment
-├── docker-compose.yaml      # Docker Compose file for local multi-container environment
+├── [main.tf](main.tf)                  # Terraform configuration file for multi-container setup
+├── [install.sh](install.sh)               # Script for setting up dependencies and initializing the environment
+├── [docker-compose.yaml](docker-compose.yaml)      # Docker Compose file for local multi-container environment
 ├── nginx/
-│   └── nginx.conf           # NGINX configuration file for SSL and load balancing
+│   └── [nginx.conf](nginx/nginx.conf)           # NGINX configuration file for SSL and load balancing
 ├── ssl/                     # Directory for generated SSL certificates (created automatically by `install.sh`)
-├── README.md                # Project documentation (this file)
-├── install.md               # Detailed installation steps and usage
-├── tasks.md                 # Task list and project requirements
-└── contributors.md          # List of contributors to the project
+├── [README.md](README.md)                # Project documentation (this file)
+├── [install.md](install.md)               # Detailed installation steps and usage
+├── [tasks.md](tasks.md)                 # Task list and project requirements
+└── [contributors.md](contributors.md)          # List of contributors to the project
+
 ```
 
 
