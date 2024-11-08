@@ -27,8 +27,3 @@ The following software will be installed automatically if not found:
 - [install.md](./install.md): Detailed installation steps and usage
 - [tasks.md](./tasks.md): Task list and project requirements
 - [contributors.md](./contributors.md): List of contributors to the project
-
-
-- [Installation guide](INSTALL.md)
-- [Contributing](CONTRIBUTIONS.md)
-- [Tasks file](TASKS.md)
