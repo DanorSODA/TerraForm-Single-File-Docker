@@ -32,3 +32,5 @@ ssl/
 /.vscode/
 
 hosts_override
+
+.terraform.lock.hcl

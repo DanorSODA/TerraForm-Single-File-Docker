@@ -1,37 +1,64 @@
-# Terraform Multi-Container Docker Environment with NGINX Load Balancer
+# Terraform NGINX SSL Proxy
 
-This project sets up a multi-container Docker environment using Terraform, with NGINX configured as a load balancer that forwards requests to an application container of details app. The setup includes HTTPS with SSL configuration for secure communication.
+A simple Terraform project that deploys two Docker containers: an NGINX SSL proxy and a "Hello World" application.
 
-## Project Overview
+## What it does
 
-- **NGINX as Load Balancer**: Configured to route incoming HTTPS traffic to an app container over a Docker network.
-- **App Container**: the details app container.
-- **Infrastructure as Code**: The environment is defined using Terraform and Docker, ensuring consistent setup across different environments.
+- Creates an NGINX container with SSL configuration
+- Creates an application container that responds with "Hello World"
+- Sets up automatic DNS routing via hosts file
+- Establishes secure communication between containers
 
-## Prerequisites
+## Project Structure
 
-### Software Requirements
-The following software will be installed automatically if not found:
-- Docker: Container runtime to run NGINX and app containers.
-- Docker Compose: (Optional) For managing containers locally using Docker Compose.
-- Terraform: Infrastructure-as-Code tool to provision the Docker environment.
-
-## File Structure
-
-```plaintext
-├── main.tf                  # Terraform configuration file for multi-container setup
-├── install.sh               # Script for setting up dependencies and initializing the environment
-├── docker-compose.yaml      # Docker Compose file for local multi-container environment
+```
+.
+├── main.tf              # Main Terraform configuration
+├── install.sh           # Dependencies installation script
 ├── nginx/
-│   └── nginx.conf           # NGINX configuration file for SSL and load balancing
-├── ssl/                     # Directory for generated SSL certificates (created automatically by `install.sh`)
-├── README.md                # Project documentation (this file)
-├── install.md               # Detailed installation steps and usage
-├── tasks.md                 # Task list and project requirements
-└── contributors.md          # List of contributors to the project
+│   └── nginx.conf       # NGINX SSL and proxy configuration
+└── ssl/                 # SSL certificates (generated during install)
 ```
 
+## Quick Start
 
-- [Installation guide](INSTALL.md)
-- [Contributing](CONTRIBUTIONS.md)
-- [Tasks file](TASKS.md)
+1. Install dependencies:
+
+```bash
+sudo ./install.sh
+```
+
+2. Deploy containers:
+
+```bash
+terraform init
+terraform apply
+```
+
+3. Access the application:
+
+```bash
+# Add to /etc/hosts:
+sudo sh -c "echo '127.0.0.1 example.local' >> /etc/hosts"
+
+# Then visit:
+https://example.local
+```
+
+4. Cleanup:
+
+```bash
+terraform destroy
+```
+
+## Documentation
+
+- Project configuration: See comments in `main.tf`
+- SSL configuration: See `nginx/nginx.conf`
+- Installation details: See `install.sh`
+
+## Additional Documentation
+
+- [Detailed Installation Guide](INSTALL.md)
+- [Project Tasks and Requirements](TASKS.md)
+- [Project Contributors](CONTRIBUTIONS.md)

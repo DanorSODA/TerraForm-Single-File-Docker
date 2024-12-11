@@ -1,6 +1,6 @@
 # Project Contributions
 
-This file outlines the main contributions of each team member for the Terraform and Docker multi-container project.
+This file outlines the main contributions of each team member for the Terraform Docker project.
 
 ## Team Members
 
@@ -12,7 +12,7 @@ This file outlines the main contributions of each team member for the Terraform 
 ### Danor Sinai
 
 - **Project Setup**: Structured the project files and created main documentation (`README.md`).
-- **Docker & NGINX Config**: Set up `nginx` as a load balancer with HTTPS, configured `app` container, and created `docker-compose.yaml`.
+- **NGINX Config**: Set up `nginx` as a load balancer with HTTPS and configured `app` container.
 - **Terraform Setup**: Wrote core Terraform configuration in `main.tf`, defined Docker resources, and output NGINX IP.
 
 ### Yossi Avni
